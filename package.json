@@ -1,0 +1,12 @@
+{
+  "name": "is-prime",
+  "version": "1.0.0",
+  "main": " ",
+  "scripts": {
+    "build-wasm": "cd wasm && wasm-pack build --out-dir ../ui/src/pkg && cd ../ui && npm install",
+    "dev": "cd ui && npm run dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

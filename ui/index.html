@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+
+  <body class="w-full h-full bg-zinc-900 p-4 sm:p-6 pt-8">
+    <div
+      class="max-w-screen-sm w-full mx-auto bg-zinc-950 text-zinc-300 p-4 sm:p-6 rounded-lg border-zinc-800 border-2 grid gap-8"
+    >
+      <h1 class="text-xl sm:text-2xl font-semibold text-center text-zinc-200">
+        Is Prime
+      </h1>
+
+      <div class="mb-10">
+        <form
+          class="grid gap-1 max-w-xs mx-auto w-full"
+          id="fibForm"
+          autocomplete="off"
+        >
+          <label class="text-base sm:text-lg font-medium">Num</label>
+          <div class="flex gap-2.5">
+            <input
+              class="bg-zinc-900 px-2.5 py-2 text-base sm:text-lg rounded-md outline-none border-2 border-zinc-800 focus:border-blue-500 transition flex flex-grow"
+              name="num"
+            />
+            <button
+              class="bg-blue-800 hover:bg-blue-900 px-4 py-2 font-medium text-center text-base sm:text-lg rounded-md outline-none transition flex"
+              type="submit"
+            >
+              Go
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-y-8">
+        <div class="flex justify-center sm:border-r-2 border-zinc-800">
+          <div class="grid gap-4">
+            <h2
+              class="text-lg sm:text-xl font-semibold text-zinc-200 text-center"
+            >
+              Wasm
+            </h2>
+
+            <div>
+              <div class="inline-grid grid-cols-2 [&>*]:py-1 [&>*]:px-4">
+                <p class="font-medium border-b-2 border-r-2 border-zinc-900">
+                  Ans
+                </p>
+                <p class="border-b-2 border-zinc-900 p-1" id="wasmAns"></p>
+                <p class="font-medium border-r-2 border-zinc-900">Time</p>
+                <p id="wasmTime"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="grid gap-4">
+            <h2
+              class="text-lg sm:text-xl font-semibold text-zinc-200 text-center"
+            >
+              JS
+            </h2>
+
+            <div>
+              <div class="inline-grid grid-cols-2 [&>*]:py-1 [&>*]:px-4">
+                <p class="font-medium border-b-2 border-r-2 border-zinc-900">
+                  Ans
+                </p>
+                <p class="border-b-2 border-zinc-900 p-1" id="jsAns"></p>
+                <p class="font-medium border-r-2 border-zinc-900">Time</p>
+                <p id="jsTime"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-Comparing the execution speed between Web Assemby and Javascript. Built a prime number checker application for that.
+Comparing the execution speed between Web Assemby and Javascript. Built a prime number checker app with wasm and js for that.
 
 To run, ensure you have rust, node and npm installed. After cloning,
 
